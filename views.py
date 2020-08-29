@@ -13,7 +13,7 @@ def show_about_page(request):
 def show_home_page(request):
 	cats = Category.objects.all()
 	images = Image.objects.all()
-	data = {'images':images,'cats':cats}
+	data = {'images': images, 'cats': cats}
 	return render(request,"home.html",data) 
 
 def show_category_page(request, cid):
