@@ -29,4 +29,3 @@ def  home(request):
 	return redirect('/home')
 
 
-	
