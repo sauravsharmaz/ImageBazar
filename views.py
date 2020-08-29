@@ -18,7 +18,7 @@ def show_home_page(request):
 
 def show_category_page(request, cid):
 	print(cid)
-	cats = Categories.objects.all() 
+	cats = Category.objects.all() 
 	category=Category.objects.get(pk=cid)
 	images = Image.objects.filter(cat=category)
 	data = {'images':images,'cats':cats}
