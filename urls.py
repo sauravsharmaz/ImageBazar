@@ -25,6 +25,7 @@ urlpatterns = [
     path('home/',show_home_page),
     path('category/<int:cid>/',show_category_page),
     path('',home),
+    
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
  
